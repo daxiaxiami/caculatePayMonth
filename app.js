@@ -32,7 +32,7 @@ class ReducePay {
     return `总共还： ${year}年${restMonth}月`
 }
 /**
- * 循环执行 repay 直到 返回的数字 < 0 停止
+ * 递归调用 repay 每个月偿还的的金额大于利息导致总的偿还在减少 直到 小于 0
  * @input 150000
  * @output month 多少年多少个月还完
  */
